@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+     int quantidadeMin, quantidadeMax;
+     float estoqueMed;
+       printf("Informe a quantidade minima: ");
+       fflush(stdout);
+       scanf("%d", &quantidadeMin);
+       printf("Informe a quantidade máxima: ");
+       fflush(stdout);
+       scanf("%d", &quantidadeMax);
+
+
+       estoqueMed = (quantidadeMin + quantidadeMax) / 2;
+       printf("O estoque é: %.2f ", estoqueMed);
+
+
+
+}
