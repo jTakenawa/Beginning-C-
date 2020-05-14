@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+
+	float valorPorHora, numDeHorasT, salario;
+
+	printf("Qual é o valor recebido por hora: ");
+	fflush(stdout);
+	scanf("%f", &valorPorHora);
+	printf("Número de horas trabalhadas: ");
+	fflush(stdout);
+	scanf("%f", &numDeHorasT);
+
+	salario = valorPorHora * numDeHorasT;
+
+	printf("O salário para esse mês é: %.2f ", salario);
+
+}
