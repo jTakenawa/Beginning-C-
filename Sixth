@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+	float altura, pesoIdeal;
+
+
+	printf("Informe sua altura: ");
+	fflush(stdout);
+	scanf("%f", &altura);
+
+
+	pesoIdeal = (72.7 * altura) - 58;
+
+	printf("O peso ideal para sua altura é %.2f", pesoIdeal);
+
+}
