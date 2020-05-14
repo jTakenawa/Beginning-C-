@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+	int numero, a, b;
+	printf("Informe um numero: ");
+	fflush(stdout);
+	scanf("%d", &numero);
+
+	if(numero > 0 ){
+		a = numero;
+		printf("O numero é positivo!");
+	}
+	else{
+		b = numero;
+		printf("O número é negativo!");
+		}
+
+}
