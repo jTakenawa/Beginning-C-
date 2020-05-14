@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+	int numero, par= 0, impar =0 ;
+	printf("Informe o numero: ");
+	fflush(stdout);
+	scanf("%d", &numero);
+	if(numero % 2 == 0){
+		par = numero;
+		}
+	   else{
+		numero = impar;
+	}
+	printf("%d\n", par);
+	printf("%d", impar);
+
+}
