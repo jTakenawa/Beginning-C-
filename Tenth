@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(){
+	float altura, pesoIdeal;
+	char sexo;
+
+
+	printf("Infrome sua altura: ");
+	fflush(stdout);
+	scanf("%f", &altura);
+	gets(stdin);
+	printf("Para masculino insira M para feminino insira f: ");
+	fflush(stdout);
+	scanf("%c", &sexo);
+
+	if (tolower (sexo) == 'm'){
+		pesoIdeal = (72.7 * altura) - 58;
+		printf("O peso ideal para essa altura é: %.2f", pesoIdeal);
+		}
+	if (tolower (sexo) == 'f'){
+
+		pesoIdeal = (62.1 * altura) - 44.7;
+		printf("O peso ideal para a sua altura é: %.2f",  pesoIdeal);
+	}
+	if (tolower (sexo) != 'm' && sexo != 'f'){
+		printf("Sexo não reconhecido");
+	}
+
+
+
+}
