@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+	int metro, centimetro;
+	printf("Insira a quantidade de metros que quer converter:");
+	fflush(stdout);
+	scanf("%d", &metro);
+
+	centimetro = metro * 100;
+
+	printf("%d metros são %d centimetros", metro, centimetro);
+}
