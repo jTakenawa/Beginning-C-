@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main(){
+	int c;
+	float   nH, salario, e = 0, valor_hora;
+
+	printf("Informe o codigo do funcionario: ");
+	fflush(stdout);
+	scanf("%d", &c );
+
+	printf("Horas trabalhadas: ");
+	fflush(stdout);
+	scanf("%f", &nH);
+
+
+	if( nH <= 50){
+		valor_hora = 10;
+	salario = nH * valor_hora;
+
+	printf("O salario do funcionario é %.2f sem horas extras", salario);
+}
+
+	if(nH > 50){
+		valor_hora = 20;
+		salario = 10 * 50;
+		e = (nH - 50) * valor_hora;
+
+		printf("O salario do funcionario é %.2f.\n E %.2f referente a horas extras.", salario, e);
+
+	}
+
+
+}
