@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+	int multa = 0 ,peso, excedente = 0;
+	printf("Insira o peso dos peixes: ");
+	fflush(stdout);
+	scanf("%d", &peso);
+
+
+
+	if(peso > 50){
+		excedente = peso - 50;
+		multa = excedente * 4;
+		printf("O peso passou o limite em %d e a multa sera de %d", excedente , multa);
+	}
+	else{
+		printf("O peso esta dentro das normas!");
+	}
+}
