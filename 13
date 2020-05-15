@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main(){
+int num1,num2,num3,num4,q1,q2,q3,q4;
+
+
+printf("Informe o primeiro numero: ");
+fflush(stdout);
+scanf("%d", &num1);
+
+printf("Informe o segundo numero: ");
+fflush(stdout);
+scanf("%d", &num2);
+
+printf("Inforne o terceiro numero: ");
+fflush(stdout);
+scanf("%d", &num3);
+
+printf("Informe o quarto numero: ");
+fflush(stdout);
+scanf("%d", &num4);
+
+q1 = (num1 * num1);
+fflush(stdout);
+q2=(num2 * num2) ;
+fflush(stdout);
+q3 =(num3 * num3);
+fflush(stdout);
+q4 = (num4 * num1);
+fflush(stdout);
+
+
+if(q3 >= 1000){
+	printf("%.2d", q3);
+
+}
+else{
+printf("num1: %.2d, Quadradado: %.2d\n", num1, q1);
+fflush(stdout);
+printf("num2: %.2d Quadrado: %.2d\n", num2, q2);
+fflush(stdout);
+printf("num3 %.2d Quadrado: %.2d\n", num3, q3);
+fflush(stdout);
+printf("num4: %.2d Quadrado:%.2d\n", num4 , q4);
+return 0;
+}
+}
