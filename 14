@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main (){
+	int numero;
+
+	printf("Informe o numero: ");
+	fflush(stdout);
+	scanf("%d", &numero);
+
+
+
+	if( numero % 2 == 0){
+		printf("O numero é par");
+	}
+	else{
+		printf("O numero é impar");
+	}
+	if (numero > 0){
+		printf("\nO numero é positivo");
+	}
+	else{
+		printf("\nO numero é negativo");
+	}
+}
