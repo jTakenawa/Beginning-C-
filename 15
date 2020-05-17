@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+	float nvPoluicao;
+	printf("Informe o nível de poluição: ");
+	fflush(stdout);
+	scanf("%f", &nvPoluicao);
+
+	if(nvPoluicao >= 0.3 && nvPoluicao < 0.4){
+		printf("Suspenda as operações das industrias do grupo 1 imediatamente.");
+		}
+	else if (nvPoluicao >=0.4 && nvPoluicao < 0.5){
+		printf("Suspenda as operações das industrias do grupo 1 e 2 imediatamente.");
+	}
+	else if (nvPoluicao >= 0.5){
+		printf("Suspenda as opreações de todas as industrias.");
+	}
+	else if(nvPoluicao < 0.3){
+		printf("As operações podem seguir normalmente.");
+	}
+}
