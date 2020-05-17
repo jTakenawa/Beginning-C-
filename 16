@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+	int idade;
+	printf("Informe a idade do nadador: ");
+	fflush(stdout);
+	scanf("%d", &idade);
+
+	if(idade > 5 && idade <= 7){
+		printf("O nadador se encontra no grupo infantil A.");
+		}
+	else if (idade > 7 && idade <= 11){
+		printf("O nadador se encotra no grupo infatil B.");
+			}
+	else if( idade > 11 && idade <= 13){
+		printf("O nadador se encontra no grupo juvenil A.");
+		}
+	else if ( idade > 13 && idade <= 17){
+		printf("O nadador se encontra no grupo juvenil B.");
+
+	}
+	else if(idade >= 18){
+		printf("O nadador se encontra no grupo adulto.");
+	}
+
+	}
