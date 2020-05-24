@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char usuario [100], senha [100];
+
+	printf("Informe o usuario:");
+	fflush(stdout);
+	gets(usuario);
+
+	printf("Informe a senha:");
+	fflush(stdout);
+	gets(senha);
+
+	while(!strcmp(usuario, senha)){
+		printf("A senha não pode ser a mesma que o usuario.\n");
+
+		printf("Informe o usuario: ");
+		fflush(stdout);
+		gets(usuario);
+
+		printf("Informe a senha: ");
+		fflush(stdout);
+		gets( senha);
+
+	}
+}
+
