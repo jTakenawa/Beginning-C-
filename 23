@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main(){
+	int Defeito=0, necEsfera=0,necLimp=0,necCaboConect=0, quebrado=0, total=0, identificacao;
+float p1,p2,p3,p4;
+	printf("Informe a indentificação: ");
+	fflush(stdout);
+	scanf("%d", &identificacao);
+
+	while(identificacao != 0){
+		printf("Escolha 1 para Necessita da esfera\n Escolha 2 para necessita de limpeza\n Escolha 3 para necessita de troca de cabo ou conector\n Escolha 4 para quebrado ou inutilizado\n");
+	fflush(stdout);
+	printf("Informe o defeito: ");
+	fflush(stdout);
+	scanf("%d", &Defeito);
+		if(Defeito == 1){
+			necEsfera = necEsfera +1;
+
+		}
+		if(Defeito == 2){
+			necLimp = necLimp + 1;
+		}
+		if(Defeito == 3){
+			necCaboConect= necCaboConect + 1;
+		}
+		if(Defeito == 4){
+			quebrado = quebrado + 1;
+
+		}
+
+		total = total +1;
+		printf("Informe a indentificação: ");
+		fflush(stdout);
+		scanf("%d", &identificacao);
+	}
+	p1 =((float)necEsfera/(float)total * 100);
+	p2 = ((float)necLimp/(float)total * 100);
+	p3 = ((float)necCaboConect/(float)total *100);
+	p4 = ((float) quebrado /(float)total * 100);
+	printf("Quantidade de mouse %d\n", total);
+	fflush(stdout);
+	printf("Situação\t\t\tQuantidade \tPercentual\n");
+	printf("1-Necessita de Esfera\t\t\t%d \t%.2f%%\n", necEsfera, p1);
+	printf("2-Necessita de Limpeza\t\t\t%d\t%.2f%%\n", necLimp, p2);
+	printf("3-Necessita de cabo ou conector \t%d \t%.2f%%\n", necCaboConect, p3);
+printf("4-Quebrado ou inutilizado\t\t%d\t%.2f%%\n", quebrado, p4);
+}
