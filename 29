@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main (){
+	int codnum;
+	float vetor[5];
+	printf("Insira o codigo da opereção desejada: ");
+	fflush(stdout);
+	scanf("%d", &codnum);
+
+	if(codnum != 0 ){
+		for (int i=0; i < 5; i++){
+			printf("Informe um numero real: ");
+			fflush(stdout);
+			scanf("%f", &vetor[i]);
+		}
+		if(codnum == 1){
+			for(int i = 0; i<5; i++){
+				printf("%.2f\n", vetor[i]);
+			}
+		}
+			if(codnum == 2){
+				for(int i = 4; i >=0; i--){
+					printf("%.2f\n", vetor[i]);
+				}
+			}
+
+	}
+
+}
